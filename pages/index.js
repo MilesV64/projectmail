@@ -24,7 +24,7 @@ export default function Home() {
           <Image className="rounded-xl" src="/ss1.png" width="2560" height="1439"></Image>
         </div>
         
-        <h1 className="text-gray-800 text-4xl font-bold text-center mb-4 mt-16">
+        <h1 className="text-gray-800 text-4xl font-bold text-left mb-4 mt-16 md:text-center">
           Meet <span className="text-primary">Stanley the Mailman</span>
         </h1>
 
@@ -32,15 +32,15 @@ export default function Home() {
         Stanley the Mailman is a simple family man who does his job well. Unfortunately, his jealous neighbor across the street, Mr. Jacobs, devises a plot to upend Stanley’s life and condemn him to a nightmare version of reality which Mr. Jacobs created himself. Stanley must solve puzzles, defeat enemies, and escape from the terror of this alternate reality.
         </p>
 
-        <div className="flex items-center my-24">
+        <div className="flex flex-col md:flex-row items-center my-32 md:my-24">
           <div className="flex-1">
             <Image className="rounded-xl" src="/ss4.png" width="2560" height="1439"></Image>
           </div>
 
-          <div className="w-16"></div>
+          <div className="w-16 h-6"></div>
           
-          <div className="flex-1">
-            <h3 className="text-gray-800 text-3xl font-bold text-left my-2">
+          <div className="flex-1 w-full">
+            <h3 className="text-gray-800 text-3xl font-bold text-left my-0 md:my-2">
               Determined. Resourceful.
             </h3>
 
@@ -50,15 +50,15 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-row-reverse items-center my-24">
+        <div className="flex flex-col md:flex-row-reverse items-center my-32 md:my-24">
           <div className="flex-1">
             <Image className="rounded-xl" src="/ss2.png" width="2560" height="1439"></Image>
           </div>
 
-          <div className="w-16"></div>
+          <div className="w-16 h-6"></div>
           
-          <div className="flex-1">
-            <h3 className="text-gray-800 text-3xl font-bold text-left my-2">
+          <div className="flex-1 w-full">
+            <h3 className="text-gray-800 text-3xl font-bold text-left my-0 md:my-2">
               Solve puzzles
             </h3>
 
@@ -68,15 +68,15 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex items-center my-24">
+        <div className="flex flex-col md:flex-row items-center my-32 md:my-24">
           <div className="flex-1">
             <Image className="rounded-xl" src="/ss3.png" width="2560" height="1439"></Image>
           </div>
 
-          <div className="w-16"></div>
+          <div className="w-16 h-6"></div>
           
-          <div className="flex-1">
-            <h3 className="text-gray-800 text-3xl font-bold text-left my-2">
+          <div className="flex-1 w-full">
+          <h3 className="text-gray-800 text-3xl font-bold text-left my-0 md:my-2">
               Escape
             </h3>
 
@@ -91,9 +91,9 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <div className="h-full m-auto max-w-5xl flex justify-between items-center text-gray-500 text-base font-xs">
-          <p>© 2020 Rocket Mail Games</p>
-          <p>By Payman Ahmadpour, Steven Ramirez, Jeremy Colfer, Miles Vinson</p>
+        <div className="h-full m-auto px-10 max-w-5xl flex flex-col items-center text-gray-500 text-base font-xs text-center">
+          <p className="py-6">© 2020 Rocket Mail Games</p>
+          <p className="py-6">By Payman Ahmadpour, Steven Ramirez, Jeremy Colfer, Miles Vinson</p>
         </div>
       </footer>
     </div>
