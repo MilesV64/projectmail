@@ -1,64 +1,100 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Project Mail</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+      <main className={styles.main + " m-auto max-w-5xl px-10 mb-40 pt-16"}>
+        
+        <div className="m-auto w-40">
+          <Image src="/mailman.png" width="540" height="540"></Image>
+        </div>
+
+        <h1 className="text-primary text-6xl font-bold text-center my-8">Project Mail</h1>
+        <h3 className="text-gray-700 text-lg font-medium text-center">The Epic Stealth Puzzle Game with a Mailman</h3>
+        <p className="text-gray-500 text-sm font-regular text-center mt-1">Now with free shipping and handling!</p>
+        
+        <div className="w-full mt-16 relative">
+          <Image className="rounded-xl" src="/ss1.png" width="2560" height="1439"></Image>
+        </div>
+        
+        <h1 className="text-gray-800 text-4xl font-bold text-center mb-4 mt-16">
+          Meet <span className="text-primary">Stanley the Mailman</span>
         </h1>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+        <p className="text-gray-800 text-lg font-regular text-left max-w-2xl m-auto">
+        Stanley the Mailman is a simple family man who does his job well. Unfortunately, his jealous neighbor across the street, Mr. Jacobs, devises a plot to upend Stanley’s life and condemn him to a nightmare version of reality which Mr. Jacobs created himself. Stanley must solve puzzles, defeat enemies, and escape from the terror of this alternate reality.
         </p>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        <div className="flex items-center my-24">
+          <div className="flex-1">
+            <Image className="rounded-xl" src="/ss4.png" width="2560" height="1439"></Image>
+          </div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <div className="w-16"></div>
+          
+          <div className="flex-1">
+            <h3 className="text-gray-800 text-3xl font-bold text-left my-2">
+              Determined. Resourceful.
+            </h3>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+            <p className="text-gray-800 text-lg font-regular text-left max-w-2xl m-auto">
+              Interact with ladders, tunnels, and more to get to the end of each nefarious puzzle without getting caught by Mr. Jacob's sentries. Nothing stands in Stanley's way.
             </p>
-          </a>
+          </div>
         </div>
+
+        <div className="flex flex-row-reverse items-center my-24">
+          <div className="flex-1">
+            <Image className="rounded-xl" src="/ss2.png" width="2560" height="1439"></Image>
+          </div>
+
+          <div className="w-16"></div>
+          
+          <div className="flex-1">
+            <h3 className="text-gray-800 text-3xl font-bold text-left my-2">
+              Solve puzzles
+            </h3>
+
+            <p className="text-gray-800 text-lg font-regular text-left max-w-2xl m-auto">
+              Mr. Jacobs is a wicked man. To solve his puzzles, you'll have to pay attention and use anything you can.
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-center my-24">
+          <div className="flex-1">
+            <Image className="rounded-xl" src="/ss3.png" width="2560" height="1439"></Image>
+          </div>
+
+          <div className="w-16"></div>
+          
+          <div className="flex-1">
+            <h3 className="text-gray-800 text-3xl font-bold text-left my-2">
+              Escape
+            </h3>
+
+            <p className="text-gray-800 text-lg font-regular text-left max-w-2xl m-auto">
+              You have one goal: get to the end of Mr. Jacob's nightmarish reality so you can get back to your family and your job as a mailman. Can you do it?
+            </p>
+          </div>
+        </div>
+        
+
+
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+        <div className="h-full m-auto max-w-5xl flex justify-between items-center text-gray-500 text-base font-xs">
+          <p>© 2020 Rocket Mail Games</p>
+          <p>By Payman Ahmadpour, Steven Ramirez, Jeremy Colfer, Miles Vinson</p>
+        </div>
       </footer>
     </div>
   )
