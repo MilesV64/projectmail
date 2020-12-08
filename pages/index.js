@@ -22,7 +22,7 @@ export default function Home() {
           <h3 className="text-gray-700 text-lg font-medium text-center">The Epic Stealth Puzzle Game with a Mailman</h3>
           <p className="text-gray-500 text-sm font-regular text-center mt-1">Now with free shipping and handling!</p>
           
-          <a href="/" className={styles.button + " mt-10 mb-2 px-20 py-3 bg-primary shadow-sm rounded-lg text-center font-semibold text-white"}>
+          <a href="https://crygie.itch.io/projectmail" className={styles.button + " mt-10 mb-2 px-20 py-3 bg-primary shadow-sm rounded-lg text-center font-semibold text-white"}>
             Play now!
           </a>
         </div>
@@ -97,7 +97,7 @@ export default function Home() {
         </div>
         
         <div className="flex flex-col items-center">
-          <a href="/" className={styles.button + " mt-10 mb-2 px-20 py-3 bg-primary shadow-sm rounded-lg text-center font-semibold text-white"}>
+          <a href="https://crygie.itch.io/projectmail" className={styles.button + " mt-10 mb-2 px-20 py-3 bg-primary shadow-sm rounded-lg text-center font-semibold text-white"}>
               Play now!
           </a>
 
