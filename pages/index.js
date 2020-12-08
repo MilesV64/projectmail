@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -16,12 +17,21 @@ export default function Home() {
           <Image src="/mailman.png" width="540" height="540"></Image>
         </div>
 
-        <h1 className="text-primary text-6xl font-bold text-center my-8">Project Mail</h1>
-        <h3 className="text-gray-700 text-lg font-medium text-center">The Epic Stealth Puzzle Game with a Mailman</h3>
-        <p className="text-gray-500 text-sm font-regular text-center mt-1">Now with free shipping and handling!</p>
+        <div className="w-full flex flex-col items-center">
+          <h1 className="text-primary text-6xl font-bold text-center my-8">Project Mail</h1>
+          <h3 className="text-gray-700 text-lg font-medium text-center">The Epic Stealth Puzzle Game with a Mailman</h3>
+          <p className="text-gray-500 text-sm font-regular text-center mt-1">Now with free shipping and handling!</p>
+          
+          <a href="/" className={styles.button + " mt-10 mb-2 px-20 py-3 bg-primary shadow-sm rounded-lg text-center font-semibold text-white"}>
+            Play now!
+          </a>
+        </div>
         
-        <div className="w-full mt-16 relative">
-          <Image className="rounded-xl" src="/ss1.png" width="2560" height="1439"></Image>
+        
+        <div className={styles.videoContainer + " w-full mt-16 rounded-xl"}>
+          <iframe className={styles.video}
+            src="https://www.youtube.com/embed/ibp87yXEFTQ">
+          </iframe>
         </div>
         
         <h1 className="text-gray-800 text-4xl font-bold text-left mb-4 mt-16 md:text-center">
