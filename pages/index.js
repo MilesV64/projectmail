@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main + " m-auto max-w-5xl px-10 mb-40 pt-16"}>
+      <main className={styles.main + " m-auto max-w-5xl px-10 mb-20 pt-16"}>
         
         <div className="m-auto w-40">
           <Image src="/mailman.png" width="540" height="540"></Image>
@@ -94,6 +94,16 @@ export default function Home() {
               You have one goal: get to the end of Mr. Jacob's nightmarish reality so you can get back to your family and your job as a mailman. Can you do it?
             </p>
           </div>
+        </div>
+        
+        <div className="flex flex-col items-center">
+          <a href="/" className={styles.button + " mt-10 mb-2 px-20 py-3 bg-primary shadow-sm rounded-lg text-center font-semibold text-white"}>
+              Play now!
+          </a>
+
+          <a href="mailto:staff@rocketmail.games?body=This%20is%20a%20fake%20email%20address" className={"mt-4 mb-2 px-20 py-3  rounded-lg text-center font-semibold text-primary"}>
+              Contact us at staff@rocketmail.games
+          </a>
         </div>
         
 
